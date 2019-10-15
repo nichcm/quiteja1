@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adicionar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <form action="/add" class="container" method="post"><br>
+        <h1 class="text-center">Adicionar</h1><br>
+        <div class="row">
+            <div class="col-sm-6">
+                <input type="text" name="nome" id="nome" placeholder="nome" class="form-control" required>
+            </div>
+            <div class="col-sm-6">
+                    <input type="text" name="macro" id="macro" placeholder="macro" class="form-control" required>
+            </div>
+        </div>
+        <br>
+        <div class="row col-sm-12">
+            <button type="submit" class="btn btn-primary btn-lg btn-block">enviar</button>
+        </div>
+    </form>
+</body>
+</html>
