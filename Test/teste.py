@@ -3,13 +3,14 @@ from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///C:\\Users\\Nicolas\\Documents\\v3\\Backup\\db.sqlite3'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////home/nicolas.martins/Projects/quiteja1/Backup/db.sqlite3'
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///C:\\Users\\Nicolas\\Documents\\v3\\Backup\\db.sqlite3'
 
 db = SQLAlchemy(app)
 
 class Macro(db.Model):
     id = db.Column('id', db.Integer, primary_key=True, autoincrement=True)
-    nome = db.Column(db.String(149))
+    nome = db.Column(db.String(150))
     macro = db.Column(db.String(150))
     def __init__(self, nome, macro):
         self.nome = nome
