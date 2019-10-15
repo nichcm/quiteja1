@@ -9,7 +9,7 @@ db = SQLAlchemy(app)
 
 class Macro(db.Model):
     id = db.Column('id', db.Integer, primary_key=True, autoincrement=True)
-    nome = db.Column(db.String(150))
+    nome = db.Column(db.String(149))
     macro = db.Column(db.String(150))
     def __init__(self, nome, macro):
         self.nome = nome
