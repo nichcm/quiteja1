@@ -22,6 +22,6 @@
     flex-wrap: wrap;
   }  
   .wrap li {
-    background: gold;
+    background: rgba(79, 214, 0, 0.575);
   }
   
