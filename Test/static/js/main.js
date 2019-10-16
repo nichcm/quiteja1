@@ -71,6 +71,14 @@ function deleteMacro(id) {
     });
 }
 
+function copyMacro(macro) {
+    console.log(macro);
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val(macro).select();
+    document.execCommand("copy");
+    $temp.remove();
+}
 
 // function editMacro(id) {
 //     $.ajax({
