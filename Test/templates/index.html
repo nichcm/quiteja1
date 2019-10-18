@@ -2,8 +2,30 @@
 {% block content %}
     <div class="container-fluid">
     <h1 class="text-center aqua">Macros</h1></div><br>
+    <div class="col-sm-12">
+            <a href="/add">Adicionar macro </a>
+    </div>
     <div class="container">
-        <div class="row">
+        <ul class="flex-container wrap">
+            {% for e in macros %}
+            <li class="flex-item">
+                <div class="container">
+                    <div class="titulo">{{e.nome}}</div>
+                    <button type="button" class="btn btn-outline-primary btn-sm">
+                        <a  href="/edit/{{e.id}}">Editar</a>
+                    </button>
+                    <button type="button" class="btn btn-outline-success btn-sm">
+                        <a  class="black" href="#" onclick="copyMacro('{{e.macro}}')">Copiar </a>
+                    </button>
+                    <button type="button" class="btn btn-outline-danger btn-sm">
+                        <a  class="black" href="#" onclick="deleteMacro({{e.id}})">Excluir </a>
+                    </button><br>
+                </div>
+                <div class="container texto">{{e.macro}}</div>
+            </li>
+            {% endfor %}
+        </ul>
+        <!-- <div class="row">
             <div class="col-sm-12">
                 <a href="/add">Adicionar macro </a>
             </div>
@@ -30,8 +52,7 @@
                     {% endfor %}
                     </tbody>
                 </table>
-
             </div>
-        </div>
+        </div> -->
     </div>
 {% endblock %}

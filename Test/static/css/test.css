@@ -1,5 +1,14 @@
-.aqua{
-    background-color: aqua;
+.titulo{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    text-align: center;
+}
+.texto{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 8px;
+}
+.black{
+  color: black;
 }
 
 .flex-container {
@@ -25,3 +34,16 @@
     background: rgba(79, 214, 0, 0.575);
   }
   
+  .flex-item {
+    background: rgb(224, 240, 0);
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    
+    line-height: 100px;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+  }

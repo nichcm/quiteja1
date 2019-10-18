@@ -1,15 +1,11 @@
 {% extends "template.html" %}
 {% block content %}
     <form action="/add" class="container" method="post"><br>
-        <h1 class="text-center">Adicionar</h1><br>
-        <div class="row">
-            <div class="col-sm-6">
-                <input type="text" name="nome" id="nome" placeholder="nome" class="form-control" required>
-            </div>
-            <div class="col-sm-6">
-                    <input type="text" name="macro" id="macro" placeholder="macro" class="form-control" required>
-            </div>
-        </div>
+        <h1 class="text-center">Adicionar</h1>
+        <br>
+        <input type="text" name="nome" id="nome" placeholder="nome" class="form-control" required>
+        <br>
+        <input type="text" name="macro" id="macro" placeholder="macro" class="form-control" required>
         <br>
         <div class="row col-sm-12">
             <button type="submit" class="btn btn-primary btn-lg btn-block">enviar</button>
