@@ -8,13 +8,16 @@
     <title>Menu</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/static/css/nicolas.css">
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="../static/css/nicolas.css">
+    <script src="/code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
-    <div class="titulo">
-        <h1 class="text-center">Macros</h1><br>
+    <div class="titulo">Macros<br>
     </div>
+    <div class="col-sm-12">
+        <a href="/add">Adicionar macro </a>
+    </div>
+    <input type="text" name="nome" id="#" placeholder="Pesquise aqui" class="form-control" value="#"><br>
 
     {% block content %}{% endblock %}
     <script src="/static/js/main.js"></script>

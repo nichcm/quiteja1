@@ -80,6 +80,15 @@ function copyMacro(macro) {
     $temp.remove();
 }
 
+function editMacro(id) {
+    $.ajax({
+        url: '/edit/' + id,
+        success: function() {
+            window.location = '/';
+        }
+    });
+}
+
 // function editMacro(id) {
 //     $.ajax({
 //         url: '/edit/',
