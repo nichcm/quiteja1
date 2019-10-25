@@ -1,0 +1,15 @@
+.titulo{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+}
+
+.caixa1{
+  background:rgba(238, 255, 0, 0.835);
+  padding: 5px;
+  width: 200px;
+  height: 500px;
+  margin-left: 2px;
+  overflow: auto;
+  border: 3px solid #73AD21;
+}
+

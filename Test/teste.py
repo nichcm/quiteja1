@@ -3,8 +3,8 @@ from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////home/nicolas.martins/Projects/quiteja1/Backup/db.sqlite3'
-#app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///C:\\Users\\Nicolas\\Documents\\v3\\Backup\\db.sqlite3'
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////home/nicolas.martins/Projects/quiteja1/Backup/db.sqlite3'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///C:\\Users\\Nicolas\\Documents\\v3\\Backup\\db.sqlite3'
 
 db = SQLAlchemy(app)
 
